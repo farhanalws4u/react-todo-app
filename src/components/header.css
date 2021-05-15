@@ -1,0 +1,69 @@
+
+.header{
+    background-color: #233D4D;
+    color: rgb(230, 230, 230);
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+}
+.logoContainer{
+    margin-left: 150px;
+    flex: 1;
+}
+.logo{
+    color: #FE7F2D;
+    font-family: 'Berkshire Swash', cursive;
+}
+.slogan{
+    font-family: 'Rancho', cursive;
+    font-size: 25px;
+}
+.searchContainer{
+    flex: 1;
+}
+.searchForm{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.searchField{
+    border:none;
+    outline: none;
+    width: 300px;
+    height: 40px;   
+    border-radius: 8px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+.searchField:focus{
+    color: #233D4D;
+}
+.searchField::placeholder{
+    color:#233D4D;
+}
+.searchButton{
+    background:none;
+    border: none;
+    color:white;
+    display: flex;
+    margin-left: 5px;
+    margin-top: 1px;
+    transition: .3s all;
+    cursor: pointer;
+}
+.searchButton:hover{
+    color: #FE7F2D;
+   
+}
+.searchButton:active{
+    transform: rotate(360deg);
+}
+
+.searchContainer{
+    display: flex;
+    align-items: center;
+    
+}
+
