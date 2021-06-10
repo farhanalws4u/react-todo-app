@@ -1,0 +1,15 @@
+.btn{
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:#233D4D;
+    color: rgb(231, 231, 231);
+    transition: .3s  all ;
+    letter-spacing: .8px;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: #FE7F2D;
+    color: #233D4D;
+}

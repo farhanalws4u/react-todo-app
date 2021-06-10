@@ -1,7 +1,8 @@
 .container{
     width: 100%;
-    height: 89.3vh;
-    background-color: #A1C181;
+    height:fit-content;
+    min-height: 89.2vh;
+    background-color: #ADC992;
 }
 .formContainer{
     display: flex;
@@ -43,4 +44,41 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+}
+.dateInput{
+    border:none;
+    padding: 10px 8px;
+    border-radius: 8px;
+    margin-left: 5px;
+    outline: none;
+}
+
+@media screen and (max-width: 450px) {
+    
+    .container{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .formContainer{
+        display: grid;
+        grid-template-columns: 1 1 1;
+    }
+    .inputField{
+       display: grid;
+       
+    }
+    .button{
+        display: grid;
+        margin-top: 20px;
+        margin-left: 0px;
+
+    }
+    .dateLable{
+        display: none;
+       
+    }
+    .dateInput{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
 }

@@ -4,6 +4,7 @@
     color: rgb(230, 230, 230);
     padding: 5px 0;
     display: flex;
+    width: 100%;
     flex-direction: row;
 }
 .logoContainer{
@@ -57,13 +58,25 @@
     color: #FE7F2D;
    
 }
-.searchButton:active{
-    transform: rotate(360deg);
-}
 
 .searchContainer{
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
 
+@media screen and (max-width: 450px) {
+  
+  .header{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      padding-bottom: 20px;
+  }
+  .logoContainer{
+     margin-left: 0;  
+  }
+  .searchContainer{
+      margin-top: 10px;
+  }
+}

@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: row;
     background-color:#619B8A ;
-    max-width: 100vw;
-    width: fit-content;
+    max-width: 50vw;
+    min-width: 600px;
+    /* width: fit-content; */
     height:fit-content ;
     /* height: 20px; */
     padding:20px 20px;
@@ -12,4 +13,46 @@
     border-radius: 8px;
     justify-content: center;
     margin-top: 10px;
+}
+.titleContainer{
+    flex: 2;
+}
+.trashIconContainer{
+    flex: .5;
+}
+.trashIconContainer i {
+    transition: .2s all ;
+}
+.trashIconContainer i:hover{
+    color:#be0000 !important;
+}
+.dateContainer p{
+    margin-left: 5px;
+}
+@media screen and (max-width: 450px) {
+    .taskContainer{
+       display: block;
+       width: fit-content;
+       min-width:375px;
+       max-width: 375px;
+       text-align: left;
+       position: relative;
+    }
+    .dateContainer {
+        margin-top: 5px;
+    }
+    .dateContainer p {
+        margin-left: 0;
+    }
+    .trashIconContainer{
+        position: absolute;
+        right: 15px;
+        top: 41%;
+    }
+    .trashIconContainer i {
+        color: #be0000 !important; 
+    }
+    .trashIconContainer i :touch-action{
+        transform: scale(1.2);
+    }
 }
